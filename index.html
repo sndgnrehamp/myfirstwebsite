@@ -1,1473 +1,1750 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reham's World 🍓</title>
 
-<title>Reham's World 🍓</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- CUSTOM CURSOR -->
-<div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
-<div class="cursor-glow"></div>
+  <!-- =========================================================
+       CUSTOM CURSOR
+       ========================================================= -->
 
-<!-- MOUSE TRAIL -->
-<div class="mouse-trail-container"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="cursor-spark">✦</div>
 
-<!-- FLOATING DECORATIONS -->
-<div class="floating strawberry">🍓</div>
-<div class="floating flower">✿</div>
-<div class="floating heart">♡</div>
-<div class="floating star">✦</div>
 
-<div class="website">
+  <!-- =========================================================
+       FLOATING DECORATIONS
+       ========================================================= -->
 
-        <!-- =========================
-             HEADER
-        ========================== -->
+  <div class="floating-decoration deco-1">🍓</div>
+  <div class="floating-decoration deco-2">✿</div>
+  <div class="floating-decoration deco-3">🍃</div>
+  <div class="floating-decoration deco-4">♡</div>
+  <div class="floating-decoration deco-5">✦</div>
 
-        <header class="topbar">
 
-            <button class="brand" onclick="goHome()">
-                🍓 <span>Reham</span>
-            </button>
+  <!-- =========================================================
+       MAIN WEBSITE
+       ========================================================= -->
 
-            <nav class="main-nav">
+  <div class="website">
 
-                <button onclick="goHome()">home</button>
+    <!-- ================= HEADER ================= -->
 
-                <button onclick="openPopup('aboutPopup')">
-                    about me
-                </button>
+    <header class="site-header">
 
-                <button onclick="openPopup('hobbiesPopup')">
-                    hobbies
-                </button>
+      <div class="brand">
+        <div class="brand-strawberry">🍓</div>
 
-                <button onclick="openPopup('favoritesPopup')">
-                    favorites
-                </button>
+        <div>
+          <h1>Reham's World</h1>
+          <p>a little corner of my world</p>
+        </div>
+      </div>
 
-                <button onclick="openPopup('skillsPopup')">
-                    skills
-                </button>
 
-                <button onclick="openPopup('albumPopup')">
-                    album
-                </button>
+      <nav class="navigation">
 
-                <button onclick="openPopup('testimonialsPopup')">
-                    testimonials
-                </button>
+        <button
+          class="nav-button interactive"
+          type="button"
+          onclick="goHome()"
+        >
+          Home
+        </button>
 
-            </nav>
+        <button
+          class="nav-button interactive"
+          type="button"
+          onclick="openPopup('aboutPopup')"
+        >
+          About
+        </button>
 
-            <button
-                class="menu-heart"
-                onclick="openPopup('aboutPopup')"
-                aria-label="Open about me"
+        <button
+          class="nav-button interactive"
+          type="button"
+          onclick="openPopup('hobbiesPopup')"
+        >
+          Hobbies
+        </button>
+
+        <button
+          class="nav-button interactive"
+          type="button"
+          onclick="openPopup('favoritesPopup')"
+        >
+          Favorites
+        </button>
+
+        <button
+          class="nav-button interactive"
+          type="button"
+          onclick="openPopup('skillsPopup')"
+        >
+          Skills
+        </button>
+
+        <button
+          class="nav-button interactive"
+          type="button"
+          onclick="openPopup('albumPopup')"
+        >
+          Album
+        </button>
+
+        <button
+          class="nav-button interactive"
+          type="button"
+          onclick="openPopup('testimonialsPopup')"
+        >
+          Testimonials
+        </button>
+
+      </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="main-content" id="home">
+
+
+      <!-- ================= HERO ================= -->
+
+      <section class="hero-section">
+
+        <div class="hero-text">
+
+          <div class="eyebrow">
+            ✿ welcome to my little world ✿
+          </div>
+
+          <h2>
+            Hi, I'm
+            <span>Reham!</span>
+          </h2>
+
+          <p class="hero-description">
+            A nursing student who loves little things,
+            meaningful moments, pretty spaces, and
+            creating memories along the way.
+          </p>
+
+          <div class="hero-tags">
+            <span>🍓 nursing student</span>
+            <span>🌿 dreamer</span>
+            <span>♡ soft heart</span>
+          </div>
+
+        </div>
+
+
+        <div class="hero-card interactive">
+
+          <div class="hero-image-wrapper">
+
+            <div class="image-decoration decoration-one">
+              ✦
+            </div>
+
+            <div class="image-decoration decoration-two">
+              ♡
+            </div>
+
+            <img
+              src="images/profile.jpg"
+              alt="Reham's profile photo"
+              class="profile-image"
             >
-                ♡
-            </button>
 
-        </header>
+          </div>
 
+          <div class="hero-card-caption">
+            <span>hello, lovely! 🌷</span>
+          </div>
 
-        <!-- =========================
-             MAIN CONTENT
-        ========================== -->
+        </div>
 
-        <main class="main-content">
+      </section>
 
-            <!-- HERO -->
 
-            <section class="hero">
+      <!-- ================= MENU ================= -->
 
-                <div class="hero-text">
+      <section class="menu-section">
 
-                    <p class="tiny-label">
-                        welcome to my little world ✦
-                    </p>
+        <div class="section-heading">
 
-                    <h1>
-                        hi, i'm <span>Reham</span> ♡
-                    </h1>
+          <span class="section-kicker">
+            explore
+          </span>
 
-                    <p class="hero-description">
-                        a nursing student, creative soul, and someone who
-                        enjoys turning little ideas into something beautiful.
-                    </p>
+          <h2>
+            little pieces of me
+          </h2>
 
-                    <div class="hero-buttons">
-
-                        <button
-                            class="primary-button"
-                            onclick="openPopup('aboutPopup')"
-                        >
-                            get to know me ♡
-                        </button>
-
-                        <button
-                            class="secondary-button"
-                            onclick="openPopup('albumPopup')"
-                        >
-                            see my album ✦
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-                <div class="hero-card">
-
-                    <div class="profile-photo">
-
-                        <img
-                            src="images/profile.jpg"
-                            alt="Reham's profile photo"
-                        >
-
-                    </div>
-
-                    <div class="profile-info">
-
-                        <p class="profile-small">
-                            currently
-                        </p>
-
-                        <h3>creating & learning</h3>
-
-                        <p>
-                            somewhere between nursing,
-                            creativity, music, and life.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- =========================
-                 INTERACTIVE MENU
-            ========================== -->
-
-            <section class="menu-section">
-
-                <div class="section-heading">
-
-                    <p>explore</p>
-
-                    <h2>
-                        little pieces of me
-                    </h2>
-
-                </div>
-
-
-                <div class="menu-grid">
-
-                    <button
-                        class="menu-card strawberry-card"
-                        onclick="openPopup('aboutPopup')"
-                    >
-
-                        <span class="card-icon">♡</span>
-
-                        <div>
-                            <h3>about me</h3>
-                            <p>get to know me</p>
-                        </div>
-
-                        <span class="arrow">↗</span>
-
-                    </button>
-
-
-                    <button
-                        class="menu-card matcha-card"
-                        onclick="openPopup('hobbiesPopup')"
-                    >
-
-                        <span class="card-icon">✿</span>
-
-                        <div>
-                            <h3>hobbies</h3>
-                            <p>things i enjoy</p>
-                        </div>
-
-                        <span class="arrow">↗</span>
-
-                    </button>
-
-
-                    <button
-                        class="menu-card cream-card"
-                        onclick="openPopup('favoritesPopup')"
-                    >
-
-                        <span class="card-icon">♡</span>
-
-                        <div>
-                            <h3>favorites</h3>
-                            <p>things i love</p>
-                        </div>
-
-                        <span class="arrow">↗</span>
-
-                    </button>
-
-
-                    <button
-                        class="menu-card strawberry-card"
-                        onclick="openPopup('skillsPopup')"
-                    >
-
-                        <span class="card-icon">✦</span>
-
-                        <div>
-                            <h3>skills</h3>
-                            <p>things i can do</p>
-                        </div>
-
-                        <span class="arrow">↗</span>
-
-                    </button>
-
-
-                    <button
-                        class="menu-card matcha-card"
-                        onclick="openPopup('albumPopup')"
-                    >
-
-                        <span class="card-icon">▣</span>
-
-                        <div>
-                            <h3>album</h3>
-                            <p>little memories</p>
-                        </div>
-
-                        <span class="arrow">↗</span>
-
-                    </button>
-
-
-                    <button
-                        class="menu-card cream-card"
-                        onclick="openPopup('testimonialsPopup')"
-                    >
-
-                        <span class="card-icon">♡</span>
-
-                        <div>
-                            <h3>testimonials</h3>
-                            <p>what my friends say</p>
-                        </div>
-
-                        <span class="arrow">↗</span>
-
-                    </button>
-
-                </div>
-
-            </section>
-
-
-            <!-- =========================
-                 LITTLE NOTE
-            ========================== -->
-
-            <section class="little-note">
-
-                <div class="note-decoration">🍓</div>
-
-                <div>
-                    <p class="note-label">
-                        a little reminder
-                    </p>
-
-                    <h2>
-                        "make room for the little things
-                        that make you happy."
-                    </h2>
-                </div>
-
-                <span class="note-star">✦</span>
-
-            </section>
-
-        </main>
-
-
-        <!-- =========================
-             MUSIC PLAYER
-        ========================== -->
-
-        <div class="music-player">
-
-            <div class="music-info">
-
-                <div class="music-cover">
-                    ♫
-                </div>
-
-                <div class="music-details">
-
-                    <span class="music-label">
-                        now playing
-                    </span>
-
-                    <strong>sofia</strong>
-
-                    <small>clairo</small>
-
-                </div>
-
-            </div>
-
-
-            <div class="music-controls">
-
-                <button
-                    class="music-button"
-                    id="playButton"
-                    onclick="toggleMusic()"
-                    aria-label="Play or pause music"
-                >
-                    ▶
-                </button>
-
-            </div>
-
-
-            <div class="music-progress-area">
-
-                <span id="currentTime">
-                    0:00
-                </span>
-
-                <input
-                    type="range"
-                    id="progressBar"
-                    value="0"
-                    min="0"
-                    max="100"
-                    aria-label="Music progress"
-                >
-
-                <span id="duration">
-                    0:00
-                </span>
-
-            </div>
-
-            <audio id="music" preload="metadata">
-                <source
-                    src="audio/sofia.mp3"
-                    type="audio/mpeg"
-                >
-            </audio>
+          <p>
+            click around and discover more about my world ♡
+          </p>
 
         </div>
 
 
-    </div>
+        <div class="menu-grid">
 
 
-    <!-- =========================
-         ABOUT POPUP
-    ========================== -->
+          <!-- ABOUT -->
 
-    <div class="popup-overlay" id="aboutPopup">
+          <button
+            class="menu-card about-card interactive"
+            type="button"
+            onclick="openPopup('aboutPopup')"
+          >
 
-        <div class="popup-window draggable-window">
+            <span class="card-icon">🌷</span>
 
-            <div class="popup-header drag-handle">
+            <span class="card-content">
+              <strong>About Me</strong>
+              <small>get to know me</small>
+            </span>
 
-                <div class="window-title">
+            <span class="card-arrow">→</span>
 
-                    <span class="window-dot pink"></span>
-                    <span class="window-dot green"></span>
-                    <span class="window-dot cream"></span>
-
-                    <span>about me ♡</span>
-
-                </div>
-
-                <button
-                    class="close-button"
-                    onclick="closePopup('aboutPopup')"
-                >
-                    ×
-                </button>
-
-            </div>
+          </button>
 
 
-            <div class="popup-content about-content">
+          <!-- HOBBIES -->
 
-                <div class="popup-image">
+          <button
+            class="menu-card hobby-card interactive"
+            type="button"
+            onclick="openPopup('hobbiesPopup')"
+          >
 
-                    <img
-                        src="images/profile.jpg"
-                        alt="Reham"
-                    >
+            <span class="card-icon">🎨</span>
 
-                </div>
+            <span class="card-content">
+              <strong>Hobbies</strong>
+              <small>things i love doing</small>
+            </span>
 
-                <div>
+            <span class="card-arrow">→</span>
 
-                    <p class="popup-label">
-                        hello there ♡
-                    </p>
-
-                    <h2>
-                        i'm <span>Reham</span>.
-                    </h2>
-
-                    <p>
-                        i'm a nursing student who enjoys learning,
-                        creating, designing, listening to music, and
-                        spending time with the people i love.
-                    </p>
-
-                    <p>
-                        i love combining my creative side with what
-                        i learn in nursing. whether it's making
-                        designs, organizing ideas, or caring for
-                        others, i always try to put a little bit
-                        of heart into what i do.
-                    </p>
-
-                    <p>
-                        this little website is a collection of
-                        things that make me, me. ♡
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
+          </button>
 
 
-    <!-- =========================
-         HOBBIES POPUP
-    ========================== -->
+          <!-- FAVORITES -->
 
-    <div class="popup-overlay" id="hobbiesPopup">
+          <button
+            class="menu-card favorites-card interactive"
+            type="button"
+            onclick="openPopup('favoritesPopup')"
+          >
 
-        <div class="popup-window draggable-window">
+            <span class="card-icon">🍓</span>
 
-            <div class="popup-header drag-handle">
+            <span class="card-content">
+              <strong>Favorites</strong>
+              <small>my current little loves</small>
+            </span>
 
-                <div class="window-title">
+            <span class="card-arrow">→</span>
 
-                    <span class="window-dot pink"></span>
-                    <span class="window-dot green"></span>
-                    <span class="window-dot cream"></span>
-
-                    <span>hobbies ✿</span>
-
-                </div>
-
-                <button
-                    class="close-button"
-                    onclick="closePopup('hobbiesPopup')"
-                >
-                    ×
-                </button>
-
-            </div>
+          </button>
 
 
-            <div class="popup-content">
+          <!-- SKILLS -->
 
-                <p class="popup-label">
-                    things i enjoy doing
-                </p>
+          <button
+            class="menu-card skills-card interactive"
+            type="button"
+            onclick="openPopup('skillsPopup')"
+          >
 
-                <h2>
-                    my favorite ways to spend time
-                </h2>
+            <span class="card-icon">🌱</span>
+
+            <span class="card-content">
+              <strong>Skills</strong>
+              <small>things i can do</small>
+            </span>
+
+            <span class="card-arrow">→</span>
+
+          </button>
 
 
-                <div class="hobby-grid">
+          <!-- ALBUM -->
 
-                    <div class="hobby-item">
-                        <span>🎨</span>
-                        <h3>designing</h3>
-                        <p>
-                            creating layouts, graphics,
-                            and cute little designs.
-                        </p>
-                    </div>
+          <button
+            class="menu-card album-card interactive"
+            type="button"
+            onclick="openPopup('albumPopup')"
+          >
 
-                    <div class="hobby-item">
-                        <span>🎧</span>
-                        <h3>listening to music</h3>
-                        <p>
-                            music is always better when
-                            i'm doing basically anything.
-                        </p>
-                    </div>
+            <span class="card-icon">📷</span>
 
-                    <div class="hobby-item">
-                        <span>🎬</span>
-                        <h3>watching movies</h3>
-                        <p>
-                            relaxing with a good movie
-                            or series.
-                        </p>
-                    </div>
+            <span class="card-content">
+              <strong>Album</strong>
+              <small>little memories</small>
+            </span>
 
-                    <div class="hobby-item">
-                        <span>📸</span>
-                        <h3>taking pictures</h3>
-                        <p>
-                            keeping little memories
-                            through photographs.
-                        </p>
-                    </div>
+            <span class="card-arrow">→</span>
 
-                    <div class="hobby-item">
-                        <span>☕</span>
-                        <h3>slow days</h3>
-                        <p>
-                            quiet moments, good conversations,
-                            and simply enjoying the day.
-                        </p>
-                    </div>
+          </button>
 
-                    <div class="hobby-item">
-                        <span>📚</span>
-                        <h3>learning</h3>
-                        <p>
-                            discovering new things and
-                            improving my skills.
-                        </p>
-                    </div>
 
-                </div>
+          <!-- TESTIMONIALS -->
 
-            </div>
+          <button
+            class="menu-card testimonials-card interactive"
+            type="button"
+            onclick="openPopup('testimonialsPopup')"
+          >
+
+            <span class="card-icon">💌</span>
+
+            <span class="card-content">
+              <strong>Testimonials</strong>
+              <small>sweet words from others</small>
+            </span>
+
+            <span class="card-arrow">→</span>
+
+          </button>
 
         </div>
 
-    </div>
+      </section>
 
 
-    <!-- =========================
-         FAVORITES POPUP
-    ========================== -->
+      <!-- ================= LITTLE NOTE ================= -->
 
-    <div class="popup-overlay" id="favoritesPopup">
+      <section class="little-note interactive">
 
-        <div class="popup-window draggable-window">
+        <div class="note-flower">
+          🌷
+        </div>
 
-            <div class="popup-header drag-handle">
+        <div class="note-content">
 
-                <div class="window-title">
+          <span class="note-label">
+            a little note
+          </span>
 
-                    <span class="window-dot pink"></span>
-                    <span class="window-dot green"></span>
-                    <span class="window-dot cream"></span>
-
-                    <span>favorites ♡</span>
-
-                </div>
-
-                <button
-                    class="close-button"
-                    onclick="closePopup('favoritesPopup')"
-                >
-                    ×
-                </button>
-
-            </div>
-
-
-            <div class="popup-content">
-
-                <p class="popup-label">
-                    a few things i love
-                </p>
-
-                <h2>
-                    my current favorites
-                </h2>
-
-
-                <div class="favorite-list">
-
-                    <div class="favorite-item">
-                        <span class="favorite-number">01</span>
-                        <div>
-                            <h3>music</h3>
-                            <p>
-                                clairo, laufey, and songs
-                                that feel like a warm hug.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="favorite-item">
-                        <span class="favorite-number">02</span>
-                        <div>
-                            <h3>colors</h3>
-                            <p>
-                                strawberry pink, matcha green,
-                                and warm cream.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="favorite-item">
-                        <span class="favorite-number">03</span>
-                        <div>
-                            <h3>movies</h3>
-                            <p>
-                                flipped, howl's moving castle, little
-                                women, and look back.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="favorite-item">
-                        <span class="favorite-number">04</span>
-                        <div>
-                            <h3>food</h3>
-                            <p>
-                                matcha, hojicha, banana pudding.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="favorite-item">
-                        <span class="favorite-number">05</span>
-                        <div>
-                            <h3>little moments</h3>
-                            <p>
-                                sunsets, late-night talks,
-                                laughter, and quiet days.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
+          <p>
+            life doesn't have to be perfect to be beautiful.
+            sometimes, the smallest moments become our
+            favorite memories. ♡
+          </p>
 
         </div>
 
-    </div>
+        <div class="note-sparkles">
+          ✦ ✧ ✦
+        </div>
+
+      </section>
+
+    </main>
 
 
-    <!-- =========================
-         SKILLS POPUP
-    ========================== -->
-
-    <div class="popup-overlay" id="skillsPopup">
-
-        <div class="popup-window draggable-window">
-
-            <div class="popup-header drag-handle">
-
-                <div class="window-title">
-
-                    <span class="window-dot pink"></span>
-                    <span class="window-dot green"></span>
-                    <span class="window-dot cream"></span>
-
-                    <span>skills ✦</span>
-
-                </div>
-
-                <button
-                    class="close-button"
-                    onclick="closePopup('skillsPopup')"
-                >
-                    ×
-                </button>
-
-            </div>
+    <!-- =========================================================
+         POPUP WINDOWS
+         ========================================================= -->
 
 
-            <div class="popup-content">
+    <!-- ================= ABOUT POPUP ================= -->
 
-                <p class="popup-label">
-                    things i can do
-                </p>
+    <div
+      class="popup-overlay"
+      id="aboutPopup"
+      aria-hidden="true"
+    >
 
-                <h2>
-                    my little skill set
-                </h2>
+      <div class="popup-window draggable-window">
 
+        <div class="popup-header drag-handle">
 
-                <div class="skill">
+          <div>
+            <span class="popup-icon">🌷</span>
+            <span class="popup-title">about me</span>
+          </div>
 
-                    <div class="skill-heading">
-                        <span>graphic & layout design</span>
-                        <span>90%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <div style="width: 90%;"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-heading">
-                        <span>digital illustration</span>
-                        <span>85%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <div style="width: 85%;"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-heading">
-                        <span>presentation design</span>
-                        <span>90%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <div style="width: 90%;"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-heading">
-                        <span>communication</span>
-                        <span>90%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <div style="width: 90%;"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-heading">
-                        <span>research & organization</span>
-                        <span>85%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <div style="width: 85%;"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="skill">
-
-                    <div class="skill-heading">
-                        <span>health education materials</span>
-                        <span>80%</span>
-                    </div>
-
-                    <div class="skill-bar">
-                        <div style="width: 80%;"></div>
-                    </div>
-
-                </div>
-
-            </div>
+          <button
+            class="close-button interactive"
+            type="button"
+            aria-label="Close"
+            onclick="closePopup('aboutPopup')"
+          >
+            ×
+          </button>
 
         </div>
 
-    </div>
 
+        <div class="popup-content">
 
-    <!-- =========================
-         ALBUM POPUP
-    ========================== -->
+          <div class="popup-intro">
 
-    <div class="popup-overlay" id="albumPopup">
+            <span class="big-popup-icon">🍓</span>
 
-        <div class="popup-window album-window draggable-window">
+            <div>
+              <h2>hello, i'm reham!</h2>
 
-            <div class="popup-header drag-handle">
-
-                <div class="window-title">
-
-                    <span class="window-dot pink"></span>
-                    <span class="window-dot green"></span>
-                    <span class="window-dot cream"></span>
-
-                    <span>my album ▣</span>
-
-                </div>
-
-                <button
-                    class="close-button"
-                    onclick="closePopup('albumPopup')"
-                >
-                    ×
-                </button>
-
+              <p>
+                welcome to my little corner of the internet.
+                i'm a nursing student who enjoys learning,
+                creating memories, spending time with the
+                people i love, and finding beauty in ordinary
+                moments.
+              </p>
             </div>
 
-
-            <div class="popup-content">
-
-                <p class="popup-label">
-                    little pieces of life
-                </p>
-
-                <h2>
-                    memories ♡
-                </h2>
+          </div>
 
 
-                <div class="album-grid">
+          <div class="info-grid">
 
-                    <div class="album-photo">
-                        <img src="images/photo1.jpg" alt="memory 1">
-                        <span>♡</span>
-                    </div>
-
-                    <div class="album-photo">
-                        <img src="images/photo2.jpg" alt="memory 2">
-                        <span>♡</span>
-                    </div>
-
-                    <div class="album-photo">
-                        <img src="images/photo3.jpg" alt="memory 3">
-                        <span>♡</span>
-                    </div>
-
-                    <div class="album-photo">
-                        <img src="images/photo4.jpg" alt="memory 4">
-                        <span>♡</span>
-                    </div>
-
-                    <div class="album-photo">
-                        <img src="images/photo5.jpg" alt="memory 5">
-                        <span>♡</span>
-                    </div>
-
-                    <div class="album-photo">
-                        <img src="images/photo6.jpg" alt="memory 6">
-                        <span>♡</span>
-                    </div>
-
-                </div>
-
+            <div class="info-card interactive">
+              <span>🌷</span>
+              <strong>personality</strong>
+              <p>
+                warm, curious, caring, and always learning.
+              </p>
             </div>
+
+            <div class="info-card interactive">
+              <span>🎓</span>
+              <strong>currently</strong>
+              <p>
+                studying nursing and growing through
+                every experience.
+              </p>
+            </div>
+
+            <div class="info-card interactive">
+              <span>♡</span>
+              <strong>values</strong>
+              <p>
+                faith, family, compassion, purpose, and
+                meaningful connections.
+              </p>
+            </div>
+
+          </div>
 
         </div>
 
+      </div>
+
     </div>
 
 
-    <!-- =========================
-         TESTIMONIALS POPUP
-    ========================== -->
+    <!-- ================= HOBBIES POPUP ================= -->
 
-    <div class="popup-overlay" id="testimonialsPopup">
+    <div
+      class="popup-overlay"
+      id="hobbiesPopup"
+      aria-hidden="true"
+    >
 
-        <div class="popup-window draggable-window">
+      <div class="popup-window draggable-window">
 
-            <div class="popup-header drag-handle">
+        <div class="popup-header drag-handle">
 
-                <div class="window-title">
+          <div>
+            <span class="popup-icon">🎨</span>
+            <span class="popup-title">my hobbies</span>
+          </div>
 
-                    <span class="window-dot pink"></span>
-                    <span class="window-dot green"></span>
-                    <span class="window-dot cream"></span>
-
-                    <span>testimonials ♡</span>
-
-                </div>
-
-                <button
-                    class="close-button"
-                    onclick="closePopup('testimonialsPopup')"
-                >
-                    ×
-                </button>
-
-            </div>
-
-
-            <div class="popup-content">
-
-                <p class="popup-label">
-                    according to my friends...
-                </p>
-
-                <h2>
-                    sweet words ♡
-                </h2>
-
-
-                <div class="testimonial-grid">
-
-                    <div class="testimonial-card">
-
-                        <div class="quote-mark">
-                            “
-                        </div>
-
-                        <p>
-                            she's genuinely caring and always
-                            notices when someone is struggling.
-                            she makes people feel heard and cared for.
-                        </p>
-
-                        <span>— a friend</span>
-
-                    </div>
-
-
-                    <div class="testimonial-card">
-
-                        <div class="quote-mark">
-                            “
-                        </div>
-
-                        <p>
-                            she's hardworking, learns quickly,
-                            and somehow always manages to explain
-                            things in a way that makes sense.
-                        </p>
-
-                        <span>— a classmate</span>
-
-                    </div>
-
-
-                    <div class="testimonial-card">
-
-                        <div class="quote-mark">
-                            “
-                        </div>
-
-                        <p>
-                            she's talented, thoughtful, and has
-                            such positive energy. working with her
-                            is always fun.
-                        </p>
-
-                        <span>— a senior i look up to</span>
-
-                    </div>
-
-                </div>
-
-            </div>
+          <button
+            class="close-button interactive"
+            type="button"
+            aria-label="Close"
+            onclick="closePopup('hobbiesPopup')"
+          >
+            ×
+          </button>
 
         </div>
 
+
+        <div class="popup-content">
+
+          <div class="hobby-grid">
+
+            <div class="hobby-item interactive">
+              <div class="hobby-icon">🎧</div>
+              <h3>music</h3>
+              <p>
+                listening to songs that match my mood.
+              </p>
+            </div>
+
+            <div class="hobby-item interactive">
+              <div class="hobby-icon">📷</div>
+              <h3>photography</h3>
+              <p>
+                capturing little moments worth remembering.
+              </p>
+            </div>
+
+            <div class="hobby-item interactive">
+              <div class="hobby-icon">🎨</div>
+              <h3>creative projects</h3>
+              <p>
+                making things and experimenting with ideas.
+              </p>
+            </div>
+
+            <div class="hobby-item interactive">
+              <div class="hobby-icon">📖</div>
+              <h3>reading</h3>
+              <p>
+                getting lost in stories and learning new things.
+              </p>
+            </div>
+
+            <div class="hobby-item interactive">
+              <div class="hobby-icon">🌿</div>
+              <h3>quiet moments</h3>
+              <p>
+                enjoying peaceful days and slowing down.
+              </p>
+            </div>
+
+            <div class="hobby-item interactive">
+              <div class="hobby-icon">💃</div>
+              <h3>dancing</h3>
+              <p>
+                letting loose and enjoying the moment.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
+    <!-- ================= FAVORITES POPUP ================= -->
 
-    <script>
+    <div
+      class="popup-overlay"
+      id="favoritesPopup"
+      aria-hidden="true"
+    >
 
-        /* =========================================
-           POPUPS
-        ========================================= */
+      <div class="popup-window draggable-window">
 
-        function openPopup(popupID) {
+        <div class="popup-header drag-handle">
 
-            const popup = document.getElementById(popupID);
+          <div>
+            <span class="popup-icon">🍓</span>
+            <span class="popup-title">my favorites</span>
+          </div>
 
-            if (!popup) return;
+          <button
+            class="close-button interactive"
+            type="button"
+            aria-label="Close"
+            onclick="closePopup('favoritesPopup')"
+          >
+            ×
+          </button>
 
-            popup.classList.add("active");
-
-            document.body.classList.add("no-scroll");
-
-            const windowElement =
-                popup.querySelector(".draggable-window");
-
-            if (windowElement) {
-
-                windowElement.classList.remove("dragging");
-
-                windowElement.style.left = "";
-                windowElement.style.top = "";
-                windowElement.style.position = "";
-                windowElement.style.margin = "";
-
-            }
-
-        }
+        </div>
 
 
-        function closePopup(popupID) {
+        <div class="popup-content">
 
-            const popup = document.getElementById(popupID);
+          <div class="favorites-grid">
 
-            if (!popup) return;
+            <div class="favorite-item interactive">
+              <span class="favorite-emoji">🍓</span>
+              <div>
+                <strong>strawberries</strong>
+                <small>sweet little happiness</small>
+              </div>
+            </div>
 
-            popup.classList.remove("active");
+            <div class="favorite-item interactive">
+              <span class="favorite-emoji">🌿</span>
+              <div>
+                <strong>green spaces</strong>
+                <small>calm, fresh, and peaceful</small>
+              </div>
+            </div>
 
-            document.body.classList.remove("no-scroll");
+            <div class="favorite-item interactive">
+              <span class="favorite-emoji">☕</span>
+              <div>
+                <strong>cozy moments</strong>
+                <small>slow mornings and warm drinks</small>
+              </div>
+            </div>
 
-        }
+            <div class="favorite-item interactive">
+              <span class="favorite-emoji">🎶</span>
+              <div>
+                <strong>good music</strong>
+                <small>songs that feel like memories</small>
+              </div>
+            </div>
 
+            <div class="favorite-item interactive">
+              <span class="favorite-emoji">🌸</span>
+              <div>
+                <strong>flowers</strong>
+                <small>anything soft and pretty</small>
+              </div>
+            </div>
 
-        function closeAllPopups() {
+            <div class="favorite-item interactive">
+              <span class="favorite-emoji">♡</span>
+              <div>
+                <strong>quality time</strong>
+                <small>with people who matter</small>
+              </div>
+            </div>
 
-            document
-                .querySelectorAll(".popup-overlay")
-                .forEach(function(popup) {
+          </div>
 
-                    popup.classList.remove("active");
+        </div>
 
-                });
+      </div>
 
-            document.body.classList.remove("no-scroll");
-
-        }
-
-
-        function goHome() {
-
-            closeAllPopups();
-
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-
-        }
-
-
-        /* =========================================
-           CLICK OUTSIDE POPUP
-        ========================================= */
-
-        document
-            .querySelectorAll(".popup-overlay")
-            .forEach(function(overlay) {
-
-                overlay.addEventListener("click", function(event) {
-
-                    if (event.target === overlay) {
-
-                        closePopup(overlay.id);
-
-                    }
-
-                });
-
-            });
+    </div>
 
 
-        /* =========================================
-           ESCAPE KEY
-        ========================================= */
+    <!-- ================= SKILLS POPUP ================= -->
 
-        document.addEventListener("keydown", function(event) {
+    <div
+      class="popup-overlay"
+      id="skillsPopup"
+      aria-hidden="true"
+    >
 
-            if (event.key === "Escape") {
+      <div class="popup-window draggable-window">
 
-                closeAllPopups();
+        <div class="popup-header drag-handle">
 
-            }
+          <div>
+            <span class="popup-icon">🌱</span>
+            <span class="popup-title">my skills</span>
+          </div>
+
+          <button
+            class="close-button interactive"
+            type="button"
+            aria-label="Close"
+            onclick="closePopup('skillsPopup')"
+          >
+            ×
+          </button>
+
+        </div>
+
+
+        <div class="popup-content">
+
+          <div class="skills-list">
+
+            <div class="skill interactive">
+
+              <div class="skill-top">
+                <span>🩺 nursing skills</span>
+                <span>learning</span>
+              </div>
+
+              <div class="skill-bar">
+                <span style="width: 78%;"></span>
+              </div>
+
+            </div>
+
+
+            <div class="skill interactive">
+
+              <div class="skill-top">
+                <span>💬 communication</span>
+                <span>strong</span>
+              </div>
+
+              <div class="skill-bar">
+                <span style="width: 86%;"></span>
+              </div>
+
+            </div>
+
+
+            <div class="skill interactive">
+
+              <div class="skill-top">
+                <span>🎨 creativity</span>
+                <span>strong</span>
+              </div>
+
+              <div class="skill-bar">
+                <span style="width: 90%;"></span>
+              </div>
+
+            </div>
+
+
+            <div class="skill interactive">
+
+              <div class="skill-top">
+                <span>🤝 teamwork</span>
+                <span>strong</span>
+              </div>
+
+              <div class="skill-bar">
+                <span style="width: 88%;"></span>
+              </div>
+
+            </div>
+
+
+            <div class="skill interactive">
+
+              <div class="skill-top">
+                <span>📚 learning</span>
+                <span>always growing</span>
+              </div>
+
+              <div class="skill-bar">
+                <span style="width: 94%;"></span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ================= ALBUM POPUP ================= -->
+
+    <div
+      class="popup-overlay"
+      id="albumPopup"
+      aria-hidden="true"
+    >
+
+      <div class="popup-window draggable-window">
+
+        <div class="popup-header drag-handle">
+
+          <div>
+            <span class="popup-icon">📷</span>
+            <span class="popup-title">little album</span>
+          </div>
+
+          <button
+            class="close-button interactive"
+            type="button"
+            aria-label="Close"
+            onclick="closePopup('albumPopup')"
+          >
+            ×
+          </button>
+
+        </div>
+
+
+        <div class="popup-content">
+
+          <div class="album-grid">
+
+            <div class="album-photo photo-one interactive">
+              <div class="photo-placeholder">
+                🌷
+              </div>
+              <span>little moments</span>
+            </div>
+
+            <div class="album-photo photo-two interactive">
+              <div class="photo-placeholder">
+                🍓
+              </div>
+              <span>sweet days</span>
+            </div>
+
+            <div class="album-photo photo-three interactive">
+              <div class="photo-placeholder">
+                🌿
+              </div>
+              <span>peaceful places</span>
+            </div>
+
+            <div class="album-photo photo-four interactive">
+              <div class="photo-placeholder">
+                📸
+              </div>
+              <span>memories</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ================= TESTIMONIALS POPUP ================= -->
+
+    <div
+      class="popup-overlay"
+      id="testimonialsPopup"
+      aria-hidden="true"
+    >
+
+      <div class="popup-window draggable-window">
+
+        <div class="popup-header drag-handle">
+
+          <div>
+            <span class="popup-icon">💌</span>
+            <span class="popup-title">sweet words</span>
+          </div>
+
+          <button
+            class="close-button interactive"
+            type="button"
+            aria-label="Close"
+            onclick="closePopup('testimonialsPopup')"
+          >
+            ×
+          </button>
+
+        </div>
+
+
+        <div class="popup-content">
+
+          <div class="testimonial-grid">
+
+            <div class="testimonial-card interactive">
+
+              <div class="quote-mark">
+                “
+              </div>
+
+              <p>
+                your kindness makes people feel comfortable
+                and cared for.
+              </p>
+
+              <span>
+                — someone who appreciates you
+              </span>
+
+            </div>
+
+
+            <div class="testimonial-card interactive">
+
+              <div class="quote-mark">
+                “
+              </div>
+
+              <p>
+                you always put effort into the things
+                that matter to you.
+              </p>
+
+              <span>
+                — a friend
+              </span>
+
+            </div>
+
+
+            <div class="testimonial-card interactive">
+
+              <div class="quote-mark">
+                “
+              </div>
+
+              <p>
+                keep growing, keep learning, and keep
+                being you.
+              </p>
+
+              <span>
+                — someone cheering for you
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================================================
+         MUSIC PLAYER
+         IMPORTANT:
+         This is INSIDE .website and in normal document flow.
+         It is NOT fixed to the viewport.
+         ========================================================= -->
+
+    <section class="music-player interactive">
+
+      <div class="music-info">
+
+        <div class="music-disc">
+          🎵
+        </div>
+
+        <div class="music-text">
+
+          <strong>
+            now playing
+          </strong>
+
+          <span>
+            sofia
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="music-controls">
+
+        <button
+          class="music-button interactive"
+          id="playButton"
+          type="button"
+          aria-label="Play music"
+        >
+          ▶
+        </button>
+
+      </div>
+
+
+      <div class="music-progress-area">
+
+        <span id="currentTime">
+          0:00
+        </span>
+
+        <input
+          type="range"
+          id="progressBar"
+          min="0"
+          max="100"
+          value="0"
+          step="0.1"
+          aria-label="Music progress"
+        >
+
+        <span id="duration">
+          0:00
+        </span>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- =========================================================
+       AUDIO
+       ========================================================= -->
+
+  <audio
+    id="audioPlayer"
+    preload="metadata"
+  >
+    <source src="audio/sofia.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+       ========================================================= -->
+
+  <script>
+
+    /* =========================================================
+       PAGE NAVIGATION
+       ========================================================= */
+
+    function goHome() {
+
+      closeAllPopups();
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+
+    }
+
+
+    /* =========================================================
+       POPUPS
+       ========================================================= */
+
+    function openPopup(id) {
+
+      const popup = document.getElementById(id);
+
+      if (!popup) return;
+
+      popup.classList.add("active");
+      popup.setAttribute("aria-hidden", "false");
+
+      document.body.classList.add("popup-open");
+
+    }
+
+
+    function closePopup(id) {
+
+      const popup = document.getElementById(id);
+
+      if (!popup) return;
+
+      popup.classList.remove("active");
+      popup.setAttribute("aria-hidden", "true");
+
+      if (!document.querySelector(".popup-overlay.active")) {
+        document.body.classList.remove("popup-open");
+      }
+
+    }
+
+
+    function closeAllPopups() {
+
+      document
+        .querySelectorAll(".popup-overlay")
+        .forEach(popup => {
+
+          popup.classList.remove("active");
+          popup.setAttribute("aria-hidden", "true");
+
+        });
+
+      document.body.classList.remove("popup-open");
+
+    }
+
+
+    /* =========================================================
+       CLOSE POPUP WHEN CLICKING OUTSIDE WINDOW
+       ========================================================= */
+
+    document
+      .querySelectorAll(".popup-overlay")
+      .forEach(overlay => {
+
+        overlay.addEventListener("click", function (event) {
+
+          if (event.target === overlay) {
+            closePopup(overlay.id);
+          }
+
+        });
+
+      });
+
+
+    /* =========================================================
+       ESC KEY
+       ========================================================= */
+
+    document.addEventListener("keydown", function (event) {
+
+      if (event.key === "Escape") {
+        closeAllPopups();
+      }
+
+    });
+
+
+    /* =========================================================
+       DRAGGABLE POPUP WINDOWS
+       POINTER EVENTS = MOUSE + TOUCH
+       ========================================================= */
+
+    let dragState = null;
+
+
+    document
+      .querySelectorAll(".drag-handle")
+      .forEach(handle => {
+
+        handle.addEventListener("pointerdown", function (event) {
+
+          if (
+            event.pointerType === "mouse" &&
+            event.button !== 0
+          ) {
+            return;
+          }
+
+          const windowElement =
+            handle.closest(".draggable-window");
+
+          if (!windowElement) return;
+
+          const rect =
+            windowElement.getBoundingClientRect();
+
+
+          /*
+             Convert the popup into an explicitly positioned
+             fixed window the first time it is dragged.
+          */
+
+          windowElement.style.position = "fixed";
+          windowElement.style.left = `${rect.left}px`;
+          windowElement.style.top = `${rect.top}px`;
+          windowElement.style.margin = "0";
+          windowElement.style.transform = "none";
+
+
+          dragState = {
+
+            windowElement,
+
+            pointerId: event.pointerId,
+
+            offsetX: event.clientX - rect.left,
+
+            offsetY: event.clientY - rect.top
+
+          };
+
+
+          windowElement.classList.add("dragging");
+
+          document.body.classList.add("cursor-dragging");
+
+          handle.setPointerCapture(event.pointerId);
+
+          event.preventDefault();
 
         });
 
 
-        /* =========================================
-           DRAGGABLE POPUP WINDOWS
-        ========================================= */
+        handle.addEventListener("pointermove", function (event) {
 
-        let activeWindow = null;
+          if (!dragState) return;
 
-        let offsetX = 0;
-        let offsetY = 0;
-
-
-        document
-            .querySelectorAll(".drag-handle")
-            .forEach(function(handle) {
-
-                handle.addEventListener(
-                    "pointerdown",
-                    startDragging
-                );
-
-            });
+          if (
+            event.pointerId !== dragState.pointerId
+          ) {
+            return;
+          }
 
 
-        function startDragging(event) {
-
-            if (event.target.closest(".close-button")) {
-                return;
-            }
-
-            const windowElement =
-                this.closest(".draggable-window");
-
-            if (!windowElement) return;
+          const windowElement =
+            dragState.windowElement;
 
 
-            activeWindow = windowElement;
-
-            const rect =
-                activeWindow.getBoundingClientRect();
-
-
-            offsetX =
-                event.clientX - rect.left;
-
-            offsetY =
-                event.clientY - rect.top;
+          const maxLeft =
+            window.innerWidth -
+            windowElement.offsetWidth -
+            8;
 
 
-            /*
-             * Convert the centered popup into a fixed
-             * positioned element before dragging.
-             */
-
-            activeWindow.style.position = "fixed";
-
-            activeWindow.style.left =
-                rect.left + "px";
-
-            activeWindow.style.top =
-                rect.top + "px";
-
-            activeWindow.style.margin = "0";
-
-            activeWindow.style.transform =
-                "none";
+          const maxTop =
+            window.innerHeight -
+            windowElement.offsetHeight -
+            8;
 
 
-            activeWindow.classList.add("dragging");
+          let newLeft =
+            event.clientX -
+            dragState.offsetX;
 
 
-            this.setPointerCapture(event.pointerId);
+          let newTop =
+            event.clientY -
+            dragState.offsetY;
 
 
-            event.preventDefault();
+          newLeft = Math.max(
+            8,
+            Math.min(
+              newLeft,
+              Math.max(8, maxLeft)
+            )
+          );
+
+
+          newTop = Math.max(
+            8,
+            Math.min(
+              newTop,
+              Math.max(8, maxTop)
+            )
+          );
+
+
+          windowElement.style.left =
+            `${newLeft}px`;
+
+          windowElement.style.top =
+            `${newTop}px`;
+
+
+          createDragTrail(
+            event.clientX,
+            event.clientY
+          );
+
+        });
+
+
+        function stopDragging(event) {
+
+          if (!dragState) return;
+
+          if (
+            event &&
+            event.pointerId !== undefined &&
+            event.pointerId !== dragState.pointerId
+          ) {
+            return;
+          }
+
+
+          dragState.windowElement
+            .classList.remove("dragging");
+
+
+          document.body
+            .classList.remove("cursor-dragging");
+
+
+          dragState = null;
 
         }
 
 
-        document.addEventListener(
-            "pointermove",
-            dragWindow
+        handle.addEventListener(
+          "pointerup",
+          stopDragging
         );
 
+        handle.addEventListener(
+          "pointercancel",
+          stopDragging
+        );
 
-        function dragWindow(event) {
-
-            if (!activeWindow) return;
-
-
-            let newLeft =
-                event.clientX - offsetX;
-
-            let newTop =
-                event.clientY - offsetY;
+      });
 
 
-            const maxLeft =
+    /* =========================================================
+       KEEP DRAGGED POPUPS INSIDE SCREEN AFTER RESIZE
+       ========================================================= */
+
+    window.addEventListener("resize", function () {
+
+      document
+        .querySelectorAll(
+          ".draggable-window[style*='position: fixed']"
+        )
+        .forEach(windowElement => {
+
+          const rect =
+            windowElement.getBoundingClientRect();
+
+
+          let left =
+            Math.max(
+              8,
+              Math.min(
+                rect.left,
                 window.innerWidth -
-                activeWindow.offsetWidth;
-
-
-            const maxTop =
-                window.innerHeight -
-                activeWindow.offsetHeight;
-
-
-            newLeft =
-                Math.max(
-                    10,
-                    Math.min(
-                        newLeft,
-                        Math.max(10, maxLeft - 10)
-                    )
-                );
-
-
-            newTop =
-                Math.max(
-                    10,
-                    Math.min(
-                        newTop,
-                        Math.max(10, maxTop - 10)
-                    )
-                );
-
-
-            activeWindow.style.left =
-                newLeft + "px";
-
-            activeWindow.style.top =
-                newTop + "px";
-
-        }
-
-
-        document.addEventListener(
-            "pointerup",
-            stopDragging
-        );
-
-
-        document.addEventListener(
-            "pointercancel",
-            stopDragging
-        );
-
-
-        function stopDragging() {
-
-            if (!activeWindow) return;
-
-            activeWindow.classList.remove("dragging");
-
-            activeWindow = null;
-
-        }
-
-
-        /* =========================================
-           MUSIC PLAYER
-        ========================================= */
-
-        const music =
-            document.getElementById("music");
-
-        const playButton =
-            document.getElementById("playButton");
-
-        const progressBar =
-            document.getElementById("progressBar");
-
-        const currentTime =
-            document.getElementById("currentTime");
-
-        const duration =
-            document.getElementById("duration");
-
-
-        function toggleMusic() {
-
-            if (music.paused) {
-
-                music.play().catch(function(error) {
-
-                    console.log(
-                        "Music could not play:",
-                        error
-                    );
-
-                });
-
-            } else {
-
-                music.pause();
-
-            }
-
-        }
-
-
-        music.addEventListener(
-            "play",
-            function() {
-
-                playButton.textContent = "Ⅱ";
-
-                document
-                    .querySelector(".music-player")
-                    .classList.add("playing");
-
-            }
-        );
-
-
-        music.addEventListener(
-            "pause",
-            function() {
-
-                playButton.textContent = "▶";
-
-                document
-                    .querySelector(".music-player")
-                    .classList.remove("playing");
-
-            }
-        );
-
-
-        music.addEventListener(
-            "loadedmetadata",
-            function() {
-
-                duration.textContent =
-                    formatTime(music.duration);
-
-            }
-        );
-
-
-        music.addEventListener(
-            "timeupdate",
-            function() {
-
-                if (!music.duration) return;
-
-
-                const percentage =
-                    (music.currentTime /
-                    music.duration) * 100;
-
-
-                progressBar.value =
-                    percentage;
-
-
-                currentTime.textContent =
-                    formatTime(
-                        music.currentTime
-                    );
-
-            }
-        );
-
-
-        progressBar.addEventListener(
-            "input",
-            function() {
-
-                if (!music.duration) return;
-
-
-                music.currentTime =
-                    (progressBar.value / 100) *
-                    music.duration;
-
-            }
-        );
-
-
-        music.addEventListener(
-            "ended",
-            function() {
-
-                playButton.textContent = "▶";
-
-                progressBar.value = 0;
-
-                currentTime.textContent = "0:00";
-
-                document
-                    .querySelector(".music-player")
-                    .classList.remove("playing");
-
-            }
-        );
-
-
-        function formatTime(seconds) {
-
-            if (isNaN(seconds)) {
-                return "0:00";
-            }
-
-
-            const minutes =
-                Math.floor(seconds / 60);
-
-
-            const remainingSeconds =
-                Math.floor(seconds % 60);
-
-
-            return (
-                minutes +
-                ":" +
-                remainingSeconds
-                    .toString()
-                    .padStart(2, "0")
+                windowElement.offsetWidth -
+                8
+              )
             );
 
+
+          let top =
+            Math.max(
+              8,
+              Math.min(
+                rect.top,
+                window.innerHeight -
+                windowElement.offsetHeight -
+                8
+              )
+            );
+
+
+          windowElement.style.left =
+            `${left}px`;
+
+          windowElement.style.top =
+            `${top}px`;
+
+        });
+
+    });
+
+
+    /* =========================================================
+       CUSTOM MOUSE CURSOR
+       ========================================================= */
+
+    const cursorDot =
+      document.querySelector(".cursor-dot");
+
+    const cursorRing =
+      document.querySelector(".cursor-ring");
+
+    const cursorSpark =
+      document.querySelector(".cursor-spark");
+
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+
+    let ringX = mouseX;
+    let ringY = mouseY;
+
+
+    document.body.classList.add("custom-cursor");
+
+
+    document.addEventListener("mousemove", function (event) {
+
+      mouseX = event.clientX;
+      mouseY = event.clientY;
+
+
+      /*
+         Small center dot follows immediately.
+      */
+
+      cursorDot.style.transform =
+        `translate(${mouseX}px, ${mouseY}px)
+         translate(-50%, -50%)`;
+
+
+      /*
+         Spark follows slightly above/right.
+      */
+
+      cursorSpark.style.transform =
+        `translate(${mouseX + 13}px, ${mouseY - 14}px)`;
+
+
+      /*
+         CSS variables power the large ambient glow.
+      */
+
+      document.documentElement.style.setProperty(
+        "--mouse-x",
+        `${mouseX}px`
+      );
+
+      document.documentElement.style.setProperty(
+        "--mouse-y",
+        `${mouseY}px`
+      );
+
+
+      /*
+         Generate the little cursor trail.
+      */
+
+      createMouseTrail(mouseX, mouseY);
+
+    });
+
+
+    /*
+       Smooth delayed ring movement.
+    */
+
+    function animateCursor() {
+
+      ringX +=
+        (mouseX - ringX) * 0.14;
+
+      ringY +=
+        (mouseY - ringY) * 0.14;
+
+
+      cursorRing.style.transform =
+        `translate(${ringX}px, ${ringY}px)
+         translate(-50%, -50%)`;
+
+
+      requestAnimationFrame(
+        animateCursor
+      );
+
+    }
+
+
+    animateCursor();
+
+
+    /* =========================================================
+       CURSOR TRAIL
+       ========================================================= */
+
+    let lastTrailTime = 0;
+
+
+    function createMouseTrail(x, y) {
+
+      const now = Date.now();
+
+      if (now - lastTrailTime < 38) {
+        return;
+      }
+
+      lastTrailTime = now;
+
+
+      const trail =
+        document.createElement("span");
+
+      trail.className =
+        "mouse-trail";
+
+
+      trail.style.left =
+        `${x}px`;
+
+      trail.style.top =
+        `${y}px`;
+
+
+      const symbols = [
+        "✦",
+        "✧",
+        "•",
+        "♡"
+      ];
+
+
+      trail.textContent =
+        symbols[
+          Math.floor(
+            Math.random() *
+            symbols.length
+          )
+        ];
+
+
+      document.body.appendChild(trail);
+
+
+      setTimeout(() => {
+
+        trail.remove();
+
+      }, 720);
+
+    }
+
+
+    /* =========================================================
+       DRAG TRAIL
+       ========================================================= */
+
+    let lastDragTrail = 0;
+
+
+    function createDragTrail(x, y) {
+
+      const now = Date.now();
+
+      if (now - lastDragTrail < 45) {
+        return;
+      }
+
+      lastDragTrail = now;
+
+
+      const trail =
+        document.createElement("span");
+
+      trail.className =
+        "drag-trail";
+
+
+      trail.style.left =
+        `${x}px`;
+
+      trail.style.top =
+        `${y}px`;
+
+
+      trail.textContent =
+        Math.random() > 0.5
+          ? "✦"
+          : "♡";
+
+
+      document.body.appendChild(trail);
+
+
+      setTimeout(() => {
+
+        trail.remove();
+
+      }, 550);
+
+    }
+
+
+    /* =========================================================
+       INTERACTIVE CURSOR HOVER
+       ========================================================= */
+
+    const interactiveElements =
+      document.querySelectorAll(
+        ".interactive, button, input, .drag-handle"
+      );
+
+
+    interactiveElements.forEach(element => {
+
+      element.addEventListener(
+        "mouseenter",
+        () => {
+          document.body.classList.add(
+            "cursor-hover"
+          );
         }
+      );
 
 
-        /* =========================================
-           CARD HOVER MICRO-INTERACTION
-        ========================================= */
+      element.addEventListener(
+        "mouseleave",
+        () => {
+          document.body.classList.remove(
+            "cursor-hover"
+          );
+        }
+      );
 
-        document
-            .querySelectorAll(".menu-card")
-            .forEach(function(card) {
-
-                card.addEventListener(
-                    "mouseenter",
-                    function() {
-
-                        const arrow =
-                            this.querySelector(".arrow");
-
-                        if (arrow) {
-                            arrow.style.transform =
-                                "translate(3px, -3px)";
-                        }
-
-                    }
-                );
+    });
 
 
-                card.addEventListener(
-                    "mouseleave",
-                    function() {
+    /* =========================================================
+       MUSIC PLAYER
+       ========================================================= */
 
-                        const arrow =
-                            this.querySelector(".arrow");
+    const audio =
+      document.getElementById("audioPlayer");
 
-                        if (arrow) {
-                            arrow.style.transform =
-                                "";
-                        }
+    const playButton =
+      document.getElementById("playButton");
 
-                    }
-                );
+    const progressBar =
+      document.getElementById("progressBar");
+
+    const currentTimeDisplay =
+      document.getElementById("currentTime");
+
+    const durationDisplay =
+      document.getElementById("duration");
+
+
+    function formatTime(seconds) {
+
+      if (!Number.isFinite(seconds)) {
+        return "0:00";
+      }
+
+
+      const minutes =
+        Math.floor(seconds / 60);
+
+
+      const remainingSeconds =
+        Math.floor(seconds % 60);
+
+
+      return `${minutes}:${String(
+        remainingSeconds
+      ).padStart(2, "0")}`;
+
+    }
+
+
+    playButton.addEventListener(
+      "click",
+      function () {
+
+        if (audio.paused) {
+
+          audio.play()
+            .then(() => {
+
+              playButton.textContent = "❚❚";
+
+              document
+                .querySelector(".music-disc")
+                .classList.add("playing");
+
+            })
+            .catch(() => {
+
+              /*
+                 Browser may block autoplay until
+                 the user interacts with the page.
+              */
 
             });
 
-    </script>
+        } else {
+
+          audio.pause();
+
+          playButton.textContent = "▶";
+
+          document
+            .querySelector(".music-disc")
+            .classList.remove("playing");
+
+        }
+
+      }
+    );
+
+
+    audio.addEventListener(
+      "loadedmetadata",
+      function () {
+
+        progressBar.max =
+          audio.duration;
+
+        durationDisplay.textContent =
+          formatTime(audio.duration);
+
+      }
+    );
+
+
+    audio.addEventListener(
+      "timeupdate",
+      function () {
+
+        progressBar.value =
+          audio.currentTime;
+
+        currentTimeDisplay.textContent =
+          formatTime(audio.currentTime);
+
+      }
+    );
+
+
+    progressBar.addEventListener(
+      "input",
+      function () {
+
+        audio.currentTime =
+          Number(progressBar.value);
+
+      }
+    );
+
+
+    audio.addEventListener(
+      "ended",
+      function () {
+
+        playButton.textContent = "▶";
+
+        document
+          .querySelector(".music-disc")
+          .classList.remove("playing");
+
+        progressBar.value = 0;
+
+      }
+    );
+
+
+    /* =========================================================
+       MOBILE / TOUCH CLEANUP
+       ========================================================= */
+
+    function handlePointerMode() {
+
+      if (
+        window.matchMedia(
+          "(pointer: coarse)"
+        ).matches
+      ) {
+
+        document.body.classList.add(
+          "touch-device"
+        );
+
+      } else {
+
+        document.body.classList.remove(
+          "touch-device"
+        );
+
+      }
+
+    }
+
+
+    handlePointerMode();
+
+
+    window.addEventListener(
+      "resize",
+      handlePointerMode
+    );
+
+  </script>
 
 </body>
 </html>
