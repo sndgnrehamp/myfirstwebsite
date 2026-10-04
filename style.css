@@ -72,30 +72,22 @@ body {
      */
     background:
 
-        radial-gradient(
-            circle at 8% 12%,
+        radial-gradient(circle at 8% 12%,
             rgba(232, 63, 104, 0.16),
-            transparent 22%
-        ),
+            transparent 22%),
 
-        radial-gradient(
-            circle at 92% 20%,
+        radial-gradient(circle at 92% 20%,
             rgba(99, 140, 85, 0.18),
-            transparent 23%
-        ),
+            transparent 23%),
 
-        radial-gradient(
-            circle at 50% 100%,
+        radial-gradient(circle at 50% 100%,
             rgba(232, 63, 104, 0.09),
-            transparent 30%
-        ),
+            transparent 30%),
 
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             #fffaf1 0%,
             #fff4f6 45%,
-            #f2f7ed 100%
-        );
+            #f2f7ed 100%);
 
     background-attachment: fixed;
 
@@ -117,10 +109,8 @@ body::before {
     opacity: 0.35;
 
     background-image:
-        radial-gradient(
-            rgba(49, 86, 56, 0.14) 1px,
-            transparent 1px
-        );
+        radial-gradient(rgba(49, 86, 56, 0.14) 1px,
+            transparent 1px);
 
     background-size: 24px 24px;
 
@@ -161,10 +151,7 @@ button {
         floatAround 5s ease-in-out infinite;
 
     filter:
-        drop-shadow(
-            0 8px 10px
-            rgba(56, 43, 39, 0.08)
-        );
+        drop-shadow(0 8px 10px rgba(56, 43, 39, 0.08));
 
 }
 
@@ -227,16 +214,14 @@ button {
     100% {
 
         transform:
-            translateY(0)
-            rotate(0deg);
+            translateY(0) rotate(0deg);
 
     }
 
     50% {
 
         transform:
-            translateY(-14px)
-            rotate(5deg);
+            translateY(-14px) rotate(5deg);
 
     }
 
@@ -261,8 +246,14 @@ button {
 
     overflow: hidden;
 
+    /* Apply the customizable background here so it covers the entire container,
+       including the area behind the music player. */
     background:
-        rgba(255, 255, 255, 0.86);
+        url('images/bg2.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     border:
         3px solid var(--dark-matcha);
@@ -300,11 +291,9 @@ button {
     gap: 20px;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             var(--dark-matcha),
-            #406a47
-        );
+            #406a47);
 
     color:
         var(--white);
@@ -343,8 +332,7 @@ button {
 .brand:hover {
 
     transform:
-        rotate(-2deg)
-        scale(1.05);
+        rotate(-2deg) scale(1.05);
 
     letter-spacing:
         0.5px;
@@ -482,8 +470,7 @@ button {
 .menu-heart:hover {
 
     transform:
-        rotate(10deg)
-        scale(1.1);
+        rotate(10deg) scale(1.1);
 
     box-shadow:
         0 0 0 transparent;
@@ -511,8 +498,7 @@ button {
     display: grid;
 
     grid-template-columns:
-        1.2fr
-        0.8fr;
+        1.2fr 0.8fr;
 
     gap: 45px;
 
@@ -685,11 +671,9 @@ button {
         20px;
 
     background:
-        linear-gradient(
-            145deg,
+        linear-gradient(145deg,
             var(--light-matcha),
-            #f2f7eb
-        );
+            #f2f7eb);
 
     border:
         3px solid var(--dark-matcha);
@@ -713,8 +697,7 @@ button {
 .hero-card:hover {
 
     transform:
-        rotate(0deg)
-        translateY(-7px);
+        rotate(0deg) translateY(-7px);
 
     box-shadow:
         10px 10px 0 var(--strawberry);
@@ -934,7 +917,7 @@ button {
     top: -35px;
 
     background:
-        rgba(255,255,255,0.13);
+        rgba(255, 255, 255, 0.13);
 
     border-radius:
         50%;
@@ -948,8 +931,7 @@ button {
 .menu-card:hover {
 
     transform:
-        translateY(-7px)
-        rotate(-1deg);
+        translateY(-7px) rotate(-1deg);
 
     box-shadow:
         7px 10px 0 var(--dark-matcha);
@@ -971,11 +953,9 @@ button {
 .strawberry-card {
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             var(--strawberry),
-            #ed5c7e
-        );
+            #ed5c7e);
 
     color:
         var(--white);
@@ -986,11 +966,9 @@ button {
 .matcha-card {
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             var(--matcha),
-            #769c68
-        );
+            #769c68);
 
     color:
         var(--white);
@@ -1001,11 +979,9 @@ button {
 .cream-card {
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             var(--cream),
-            #fffdf8
-        );
+            #fffdf8);
 
     color:
         var(--dark-brown);
@@ -1040,7 +1016,7 @@ button {
         50%;
 
     background:
-        rgba(255,255,255,0.18);
+        rgba(255, 255, 255, 0.18);
 
     font-size:
         25px;
@@ -1054,8 +1030,7 @@ button {
 .menu-card:hover .card-icon {
 
     transform:
-        rotate(12deg)
-        scale(1.12);
+        rotate(12deg) scale(1.12);
 
 }
 
@@ -1134,11 +1109,9 @@ button {
         20px;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             var(--dark-matcha),
-            #426d49
-        );
+            #426d49);
 
     color:
         var(--white);
@@ -1292,16 +1265,20 @@ button {
 
     max-height:
         85vh;
+        
+    display:
+        flex;
+        
+    flex-direction:
+        column;
 
-    overflow-y:
-        auto;
+    overflow:
+        hidden;
 
     background:
-        linear-gradient(
-            145deg,
+        linear-gradient(145deg,
             var(--soft-cream),
-            var(--cream)
-        );
+            var(--cream));
 
     border:
         3px solid var(--dark-matcha);
@@ -1311,11 +1288,10 @@ button {
 
     box-shadow:
         10px 10px 0 var(--strawberry),
-        0 20px 60px rgba(0,0,0,0.2);
+        0 20px 60px rgba(0, 0, 0, 0.2);
 
     transform:
-        scale(0.88)
-        translateY(15px);
+        scale(0.88) translateY(15px);
 
     transition:
         transform 0.25s ease,
@@ -1330,8 +1306,7 @@ button {
 .popup-overlay.active .popup-window {
 
     transform:
-        scale(1)
-        translateY(0);
+        scale(1) translateY(0);
 
 }
 
@@ -1389,7 +1364,7 @@ button {
 
     box-shadow:
         14px 14px 0 var(--strawberry),
-        0 25px 70px rgba(0,0,0,0.25);
+        0 25px 70px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -1432,11 +1407,9 @@ button {
         space-between;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             var(--dark-matcha),
-            #406a47
-        );
+            #406a47);
 
     color:
         var(--white);
@@ -1547,8 +1520,7 @@ button {
 .close-button:hover {
 
     transform:
-        rotate(90deg)
-        scale(1.08);
+        rotate(90deg) scale(1.08);
 
     background:
         var(--dark-strawberry);
@@ -1564,6 +1536,9 @@ button {
 
     padding:
         35px;
+        
+    overflow-y:
+        auto;
 
 }
 
@@ -1583,7 +1558,7 @@ button {
 }
 
 
-.popup-content > p {
+.popup-content>p {
 
     max-width:
         700px;
@@ -1696,7 +1671,7 @@ button {
         20px;
 
     background:
-        rgba(255,255,255,0.78);
+        rgba(255, 255, 255, 0.78);
 
     border:
         2px solid var(--dark-matcha);
@@ -1705,7 +1680,7 @@ button {
         var(--radius-medium);
 
     box-shadow:
-        0 5px 0 rgba(49,86,56,0.08);
+        0 5px 0 rgba(49, 86, 56, 0.08);
 
     transition:
         transform 0.3s ease,
@@ -1718,8 +1693,7 @@ button {
 .hobby-item:hover {
 
     transform:
-        translateY(-7px)
-        rotate(-1deg);
+        translateY(-7px) rotate(-1deg);
 
     background:
         var(--white);
@@ -1730,7 +1704,7 @@ button {
 }
 
 
-.hobby-item > span {
+.hobby-item>span {
 
     font-size:
         27px;
@@ -1796,7 +1770,7 @@ button {
         17px;
 
     background:
-        rgba(255,255,255,0.8);
+        rgba(255, 255, 255, 0.8);
 
     border:
         2px solid var(--dark-matcha);
@@ -1932,11 +1906,9 @@ button {
         100%;
 
     background:
-        linear-gradient(
-            90deg,
+        linear-gradient(90deg,
             var(--strawberry),
-            var(--hot-pink)
-        );
+            var(--hot-pink));
 
     border-radius:
         inherit;
@@ -1994,7 +1966,7 @@ button {
         var(--light-matcha);
 
     box-shadow:
-        0 5px 0 rgba(49,86,56,0.1);
+        0 5px 0 rgba(49, 86, 56, 0.1);
 
     transition:
         transform 0.3s ease,
@@ -2006,9 +1978,7 @@ button {
 .album-photo:hover {
 
     transform:
-        rotate(-2deg)
-        scale(1.03)
-        translateY(-4px);
+        rotate(-2deg) scale(1.03) translateY(-4px);
 
     box-shadow:
         5px 8px 0 var(--strawberry);
@@ -2092,8 +2062,7 @@ button {
 .album-photo:hover span {
 
     transform:
-        rotate(15deg)
-        scale(1.1);
+        rotate(15deg) scale(1.1);
 
 }
 
@@ -2125,7 +2094,7 @@ button {
         23px;
 
     background:
-        rgba(255,255,255,0.82);
+        rgba(255, 255, 255, 0.82);
 
     border:
         2px solid var(--dark-matcha);
@@ -2241,11 +2210,9 @@ button {
         15px;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             var(--dark-matcha),
-            #426d49
-        );
+            #426d49);
 
     color:
         var(--white);
@@ -2335,8 +2302,7 @@ button {
 .music-player:hover .music-cover {
 
     transform:
-        rotate(-8deg)
-        scale(1.05);
+        rotate(-8deg) scale(1.05);
 
 }
 
@@ -2392,7 +2358,7 @@ button {
 .music-details small {
 
     color:
-        rgba(255,255,255,0.7);
+        rgba(255, 255, 255, 0.7);
 
     font-size:
         10px;
@@ -2438,7 +2404,7 @@ button {
         14px;
 
     box-shadow:
-        3px 3px 0 rgba(0,0,0,0.18);
+        3px 3px 0 rgba(0, 0, 0, 0.18);
 
     transition:
         transform 0.25s ease,
@@ -2488,7 +2454,7 @@ button {
         9px;
 
     color:
-        rgba(255,255,255,0.75);
+        rgba(255, 255, 255, 0.75);
 
 }
 
@@ -2557,7 +2523,7 @@ button {
    SCROLLBAR
 ========================================= */
 
-.popup-window::-webkit-scrollbar {
+.popup-content::-webkit-scrollbar {
 
     width:
         8px;
@@ -2565,7 +2531,7 @@ button {
 }
 
 
-.popup-window::-webkit-scrollbar-track {
+.popup-content::-webkit-scrollbar-track {
 
     background:
         var(--light-matcha);
@@ -2573,7 +2539,7 @@ button {
 }
 
 
-.popup-window::-webkit-scrollbar-thumb {
+.popup-content::-webkit-scrollbar-thumb {
 
     background:
         var(--strawberry);
@@ -2584,7 +2550,7 @@ button {
 }
 
 
-.popup-window::-webkit-scrollbar-thumb:hover {
+.popup-content::-webkit-scrollbar-thumb:hover {
 
     background:
         var(--dark-strawberry);
@@ -2696,7 +2662,7 @@ button {
 
         box-shadow:
             5px 5px 0 var(--dark-matcha),
-            0 15px 40px rgba(49,86,56,0.12);
+            0 15px 40px rgba(49, 86, 56, 0.12);
 
     }
 
